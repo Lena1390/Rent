@@ -1,0 +1,22 @@
+body{
+    background-color:white;
+   }
+
+div {
+ float: above;
+ background: #FFB300;
+ width: 100%;
+ height:20%;
+ }
+
+main .features {
+    background: white;
+    float: center auto;
+    margin-top: 150px;
+    text-align: center ;
+    width: 90%;
+}
+
+main .features h1 {font-size: 60px;}
+main .features p {max-width: 400px; margin: 40px auto }
+main .features btn { border pink}

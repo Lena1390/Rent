@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Каталог
+{% endblock %}
+
+{% block content %}
+    <h1>Каталог товаров</h1>
+    <p>Объявления</p>
+    {% for el in tasks %}
+      <div class="alert alert-warning mt-2">
+        <h3>{{ el.title }}</h3>
+        <p>{{ el.task }}</p>
+        <p>{{ el.photo }}</p>
+        <p>{{ el.time_create}}<p>
+        <hr>
+      </div>
+    {% endfor %}
+{% endblock %}
+
