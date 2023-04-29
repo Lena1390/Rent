@@ -7,14 +7,16 @@
 {% block content %}
     <h1>Каталог товаров</h1>
     <p>Объявления</p>
-    {% for el in tasks %}
-      <div class="alert alert-warning mt-2">
-        <h3>{{ el.title }}</h3>
-        <p>{{ el.task }}</p>
-        <p>{{ el.photo }}</p>
-        <p>{{ el.time_create}}<p>
+    {% for b in tasks %}
+      <div class="alert alert-secondary" >
+          <a>{{ b.title }}</a>
+          <p>{{ b.body }}</p>
+          <img src="{{ b.image.url }}" alt="{{ b.image }}" width="100">
+         <p>{{ b.task }}</p>
+          <button  class="btn btn-dark">написать арендодателю</button>
+          <button  class="btn btn-dark">арендовать</button>
+          <p>{{ b.time_create }}</p>
         <hr>
       </div>
     {% endfor %}
 {% endblock %}
-
