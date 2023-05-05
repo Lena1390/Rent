@@ -26,6 +26,54 @@
 
       </nav>
     </div>
+<main class="container">
+   {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                   <div class="col-md-2 col-8">
+                       <h4>Rent Stock</h4>
+                       <ul class="list-unstyled">
+                           <li><a></a></li>
+                       </ul>
+                   </div>
+
+                    <div class="col-md-2 col-8">
+                       <h4>о нас</h4>
+                       <ul class="list-unstyled">
+                           <li><a href="#">как работает сервис?</a></li>
+                           <li><a href="#">контакты</a></li>
+                       </ul>
+                   </div>
+
+                    <div class="col-md-2 col-8">
+                       <h4>помощь</h4>
+                       <ul class="list-unstyled">
+                           <li><a href="#">поддержка</a></li>
+                       </ul>
+                   </div>
+
+                    <div class="col-md-2 col-8">
+                       <h4>арендодателям</h4>
+                       <ul class="list-unstyled">
+                           <li><a href="#">как сдать в аренду</a></li>
+                           <li><a href="#">разместить объявление</a></li>
+                       </ul>
+                   </div>
+
+                    <div class="col-md-2 col-8">
+                       <h4>арендаторам</h4>
+                       <ul class="list-unstyled">
+                           <li><a href="{% url 'take' %}">как взять в аренду</a></li>
+                       </ul>
+                   </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 
     <main class="container">
    {% block content %}{% endblock %}
